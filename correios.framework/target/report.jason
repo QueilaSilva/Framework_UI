@@ -1,0 +1,164 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2023-03-24T19:42:59.957Z",
+        "line": 6,
+        "name": "Cep inexistente",
+        "description": "",
+        "id": "consulta-cep;cep-inexistente",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 10381098500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "que esteja no site  \"https://www.correios.com.br/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.correios.com.br/\"",
+                  "offset": 20
+                }
+              ],
+              "location": "steps.Test.que_esteja_no_site(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 604146100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "digito cep enexistente",
+            "match": {
+              "location": "steps.Test.digito_cep_enexistente()"
+            },
+            "keyword": "But "
+          },
+          {
+            "result": {
+              "duration": 483672500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "clicar na lupa",
+            "match": {
+              "location": "steps.Test.clicar_na_lupa()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1059262600,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "mensagem informa dados nao encontrados",
+            "match": {
+              "location": "steps.Test.mensagem_informa_dados_nao_encontrados()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Negative"
+          }
+        ]
+      }
+    ],
+    "name": "Consulta cep",
+    "description": "Como usuario irei consultar cep",
+    "id": "consulta-cep",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/cep.feature",
+    "tags": []
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2023-03-24T19:43:12.657Z",
+        "line": 6,
+        "name": "Digitar",
+        "description": "",
+        "id": "consultar-avenida;digitar",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5957889000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "que entre no site \"https://www.correios.com.br/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.correios.com.br/\"",
+                  "offset": 18
+                }
+              ],
+              "location": "steps.Test.que_entre_no_site(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 231470700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "digito avenida",
+            "match": {
+              "location": "steps.Test.digito_avenida()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 575338000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "clico na lupa",
+            "match": {
+              "location": "steps.Test.clico_na_lupa()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 946034700,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "resultados validos",
+            "match": {
+              "location": "steps.Test.resultados_validos()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Positive"
+          }
+        ]
+      }
+    ],
+    "name": "Consultar avenida",
+    "description": "Como usuario irei consultar avenida",
+    "id": "consultar-avenida",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/pesquisa.feature",
+    "tags": []
+  }
+]
